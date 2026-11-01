@@ -25,7 +25,7 @@ Mỗi thành viên tự bổ sung thông tin và xác nhận tài khoản GitHub
 | Thành viên 1 | Chờ cập nhật | Chưa phân công |
 | Thành viên 2 | Chờ cập nhật | Chưa phân công |
 | Thành viên 3 | Chờ cập nhật | Chưa phân công |
-| Thành viên 4 | Chờ cập nhật | Chưa phân công |
+| Nguyễn Thị Hồng Thắm | HTham326 | Flutter Client (Dart) |
 
 ### 4. Cấu trúc dự án dự kiến
 
