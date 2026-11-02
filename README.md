@@ -22,7 +22,7 @@ Mỗi thành viên tự bổ sung thông tin và xác nhận tài khoản GitHub
 
 | Thành viên | GitHub username | Nhiệm vụ |
 |---|---|---|
-| Thành viên 1 | Chờ cập nhật | Chưa phân công |
+| Bùi Huỳnh Tuấn Vũ | tuanvu254254-dot | phân tích yêu cầu + Use case, ERD, postgreSQL và dữ liệu mẫu |
 | Thành viên 2 | Chờ cập nhật | Chưa phân công |
 | Thành viên 3 | Chờ cập nhật | Chưa phân công |
 | Nguyễn Thị Hồng Thắm | HTham326 | Flutter Client (Dart) |
