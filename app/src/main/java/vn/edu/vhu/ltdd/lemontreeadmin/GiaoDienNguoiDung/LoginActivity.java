@@ -14,6 +14,7 @@ import vn.edu.vhu.ltdd.lemontreeadmin.MoHinhDuLieu.PhanHoiDangNhap;
 import vn.edu.vhu.ltdd.lemontreeadmin.MoHinhDuLieu.YeuCauDangNhap;
 import vn.edu.vhu.ltdd.lemontreeadmin.KetNoiMang.CauHinhApiClient;
 import vn.edu.vhu.ltdd.lemontreeadmin.KetNoiMang.GiaoDienApi;
+import vn.edu.vhu.ltdd.lemontreeadmin.TienIch.QuanLyToken;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -51,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                             PhanHoiDangNhap ketQua = response.body();
 
                             // Lưu Token vào SharedPreferences (nếu cần quản lý phiên đăng nhập)
-                            // QuanLyToken.luuToken(LoginActivity.this, ketQua.getToken());
+                            QuanLyToken.luuToken(LoginActivity.this, ketQua.getToken());
 
                             Toast.makeText(LoginActivity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
 
