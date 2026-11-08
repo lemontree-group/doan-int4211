@@ -30,14 +30,15 @@ trong các khu công nghiệp.
 - `database/`: Cấu trúc và dữ liệu cơ sở dữ liệu.
 - `phantich/`: Tài liệu phân tích, thiết kế hệ thống.
 
-## 4. Phân công thành viên
 
-| Thành viên | Công việc |
-|---|---|
-| Thành viên 1 | Phân tích, thiết kế CSDL PostgreSQL |
-| Thành viên 2 | Backend Node.js, Express |
-| Thành viên 3 | Android Admin Java/XML |
-| Thành viên 4 | Flutter Client Dart |
+## 4. Danh sách thành viên và phân công công việc
+
+| STT | Họ và tên | MSSV | GitHub Username | Vai trò phụ trách |
+|---|---|---|---|---|
+| 1 | Chờ xác nhận | Chờ xác nhận | Chờ xác nhận | Phân tích hệ thống, Use Case, ERD, PostgreSQL |
+| 2 | Chờ xác nhận | Chờ xác nhận | Chờ xác nhận | Backend Node.js, Express, REST API |
+| 3 | Chờ xác nhận | Chờ xác nhận | Chờ xác nhận | Android Admin (Java/XML) |
+| 4 | Nguyễn Thị Hồng Thắm | 241A010134 | HTham326 | Flutter Client (Flutter/Dart) |
 
 ## 5. Trạng thái dự án
 
