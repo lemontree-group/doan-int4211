@@ -33,12 +33,12 @@ trong các khu công nghiệp.
 
 ## 4. Danh sách thành viên và phân công công việc
 
-| STT | Họ và tên | MSSV | GitHub Username | Vai trò phụ trách |
-|---|---|---|---|---|
-| 1 | Bùi Huỳnh Tuấn Vũ | 241A010778 | tuanvu254254-dot | Phân tích hệ thống, Use Case, ERD, PostgreSQL |
-| 2 | Lê Huỳnh Thành Đạt | 241A010102 | haruestia0613-sudo | Backend Node.js, Express, REST API |
-| 3 | Chờ xác nhận | Chờ xác nhận | Chờ xác nhận | Android Admin (Java/XML) |
-| 4 | Nguyễn Thị Hồng Thắm | 241A010134 | HTham326 | Flutter Client (Flutter/Dart) |
+| STT | Họ và tên             | MSSV       | GitHub Username    | Vai trò phụ trách |
+|---|-----------------------|------------|--------------------|---|
+| 1 | Bùi Huỳnh Tuấn Vũ     | 241A010778 | tuanvu254254-dot   | Phân tích hệ thống, Use Case, ERD, PostgreSQL |
+| 2 | Lê Huỳnh Thành Đạt    | 241A010102 | haruestia0613-sudo | Backend Node.js, Express, REST API |
+| 3 | Trần Nguyễn Thanh Lộc | 241A010179 | LocTran246         | Android Admin (Java/XML) |
+| 4 | Nguyễn Thị Hồng Thắm  | 241A010134 | HTham326           | Flutter Client (Flutter/Dart) |
 
 ## 5. Trạng thái dự án
 
