@@ -35,7 +35,7 @@ trong các khu công nghiệp.
 
 | STT | Họ và tên | MSSV | GitHub Username | Vai trò phụ trách |
 |---|---|---|---|---|
-| 1 | Chờ xác nhận | Chờ xác nhận | Chờ xác nhận | Phân tích hệ thống, Use Case, ERD, PostgreSQL |
+| 1 | Bùi Huỳnh Tuấn Vũ | 241A010778 | tuanvu254254-dot | Phân tích hệ thống, Use Case, ERD, PostgreSQL |
 | 2 | Chờ xác nhận | Chờ xác nhận | Chờ xác nhận | Backend Node.js, Express, REST API |
 | 3 | Chờ xác nhận | Chờ xác nhận | Chờ xác nhận | Android Admin (Java/XML) |
 | 4 | Nguyễn Thị Hồng Thắm | 241A010134 | HTham326 | Flutter Client (Flutter/Dart) |
