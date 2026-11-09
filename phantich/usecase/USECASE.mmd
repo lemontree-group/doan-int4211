@@ -1,0 +1,80 @@
+flowchart LR
+
+%% Actors
+CN["👷 Công nhân"]
+QL["🏭 Quản lý nhà máy"]
+QT["⚙️ Quản trị hệ thống"]
+
+%% System Boundary
+subgraph HT["HỆ THỐNG ĐẶT SUẤT ĂN CÔNG NGHIỆP"]
+
+    %% Công nhân
+    UC1(["Đăng nhập"])
+    UC2(["Xem thực đơn"])
+    UC3(["Đăng ký suất ăn"])
+    UC4(["Hủy đăng ký suất ăn"])
+    UC5(["Xem mã QR"])
+    UC6(["Tra cứu lịch sử đăng ký"])
+    UC7(["Đánh giá suất ăn"])
+    UC8(["Gửi phản ánh"])
+    UC9(["Xem trạng thái phản ánh"])
+
+    %% Quản lý nhà máy
+    UC10(["Quản lý công nhân"])
+    UC11(["Quản lý menu"])
+    UC12(["Quản lý món ăn"])
+    UC13(["Theo dõi đăng ký suất ăn"])
+    UC14(["Xác nhận nhận suất ăn"])
+    UC15(["Quản lý phản ánh"])
+    UC16(["Xem đánh giá suất ăn"])
+    UC17(["Thống kê suất ăn"])
+    UC18(["Xuất báo cáo nhà máy"])
+
+    %% Quản trị hệ thống
+    UC19(["Quản lý nhà máy"])
+    UC20(["Quản lý tài khoản"])
+    UC21(["Phân quyền"])
+    UC22(["Xem báo cáo toàn hệ thống"])
+    UC23(["Theo dõi hoạt động hệ thống"])
+
+    %% Use Case phụ
+    UC24(["Sinh mã QR"])
+    UC25(["Quét mã QR"])
+end
+
+%% Công nhân
+CN --- UC1
+CN --- UC2
+CN --- UC3
+CN --- UC4
+CN --- UC5
+CN --- UC6
+CN --- UC7
+CN --- UC8
+CN --- UC9
+
+%% Quản lý nhà máy
+QL --- UC10
+QL --- UC11
+QL --- UC12
+QL --- UC13
+QL --- UC14
+QL --- UC15
+QL --- UC16
+QL --- UC17
+QL --- UC18
+
+%% Quản trị hệ thống
+QT --- UC19
+QT --- UC20
+QT --- UC21
+QT --- UC22
+QT --- UC23
+
+%% Quan hệ include
+UC3 --> UC24
+UC14 --> UC25
+
+%% Quy trình QR
+UC5 --> UC24
+UC7 --> UC14

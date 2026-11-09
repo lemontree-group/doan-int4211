@@ -1,0 +1,112 @@
+erDiagram
+ 
+NHA_MAY {
+int ma_nha_may PK
+varchar ma_nha_may_code
+varchar ten_nha_may
+text dia_chi
+varchar so_dien_thoai
+}
+ 
+CONG_NHAN {
+int ma_cn PK
+int ma_nha_may FK
+varchar ma_cong_nhan
+varchar ho_ten
+varchar gioi_tinh
+date ngay_sinh
+varchar bo_phan
+varchar ca_lam_viec
+}
+ 
+TAI_KHOAN {
+int ma_tk PK
+int ma_cn FK
+int ma_nha_may FK
+varchar ten_dang_nhap
+varchar password_hash
+varchar vai_tro
+boolean trang_thai
+}
+ 
+MON_AN {
+int ma_mon PK
+varchar ten_mon
+text mo_ta
+numeric gia
+text anh_url
+text nguyen_lieu
+text canh_bao_di_ung
+}
+ 
+MENU {
+int ma_menu PK
+int ma_nha_may FK
+date ngay_ap_dung
+timestamptz thoi_diem_chot
+text ghi_chu
+}
+ 
+MENU_MON_AN {
+int ma_menu PK,FK
+int ma_mon PK,FK
+varchar loai_suat PK
+}
+ 
+DANG_KY_SUAT_AN {
+int ma_dang_ky PK
+int ma_cn FK
+int ma_menu FK
+varchar loai_suat
+varchar ma_qr
+timestamptz thoi_gian_dang_ky
+timestamptz thoi_gian_nhan
+varchar trang_thai
+}
+ 
+DANH_GIA {
+int ma_danh_gia PK
+int ma_cn FK
+int ma_menu FK
+int diem_so
+text nhan_xet
+timestamptz ngay_danh_gia
+}
+ 
+PHAN_ANH {
+int ma_phan_anh PK
+int ma_cn FK
+varchar tieu_de
+text noi_dung
+text anh_url
+timestamptz ngay_phan_anh
+varchar trang_thai
+}
+ 
+DINH_MUC {
+int ma_mon PK,FK
+varchar ten_nguyen_lieu PK
+numeric so_luong
+varchar don_vi
+}
+ 
+NHA_MAY ||--o{ CONG_NHAN : "quan_ly"
+ 
+NHA_MAY ||--o{ MENU : "co"
+ 
+NHA_MAY ||--o{ TAI_KHOAN : "quan_ly"
+ 
+CONG_NHAN ||--o| TAI_KHOAN : "so_huu"
+ 
+MENU ||--o{ MENU_MON_AN : "gom"
+MON_AN ||--o{ MENU_MON_AN : "thuoc"
+ 
+CONG_NHAN ||--o{ DANG_KY_SUAT_AN : "dang_ky"
+MENU ||--o{ DANG_KY_SUAT_AN : "duoc_dang_ky"
+ 
+CONG_NHAN ||--o{ DANH_GIA : "viet"
+MENU ||--o{ DANH_GIA : "duoc_danh_gia"
+ 
+CONG_NHAN ||--o{ PHAN_ANH : "gui"
+ 
+MON_AN ||--o{ DINH_MUC : "co"
