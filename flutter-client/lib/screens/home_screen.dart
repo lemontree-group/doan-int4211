@@ -1,13 +1,11 @@
-
 import 'package:flutter/material.dart';
+
+import 'menu_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final Map<String, dynamic> user;
 
-  const HomeScreen({
-    super.key,
-    required this.user,
-  });
+  const HomeScreen({super.key, required this.user});
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +21,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(
-                Icons.account_circle,
-                size: 80,
-                color: Colors.blue,
-              ),
+              const Icon(Icons.account_circle, size: 80, color: Colors.blue),
               const SizedBox(height: 20),
               const Text(
                 'ĐĂNG NHẬP THÀNH CÔNG',
@@ -42,6 +36,22 @@ class HomeScreen extends StatelessWidget {
               _buildInfo('Họ tên', user['ho_ten']),
               _buildInfo('Mã công nhân', user['ma_cong_nhan']),
               _buildInfo('Nhà máy', user['ten_nha_may']),
+              const SizedBox(height: 24),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MenuScreen(),
+                      ),
+                    );
+                  },
+                  icon: const Icon(Icons.restaurant_menu),
+                  label: const Text('Xem thực đơn'),
+                ),
+              ),
             ],
           ),
         ),
@@ -59,9 +69,7 @@ class HomeScreen extends StatelessWidget {
             flex: 2,
             child: Text(
               '$label:',
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-              ),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
           Expanded(
