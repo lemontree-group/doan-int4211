@@ -4,6 +4,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth.routes');
 const healthRoutes = require('./routes/health.routes');
 const menuRoutes = require('./routes/menu.routes');
+const registrationRoutes = require('./routes/registration.routes');
 
 const notFound = require('./middleware/notFound');
 const errorHandler = require('./middleware/errorHandler');
@@ -27,6 +28,9 @@ app.use('/api/auth', authRoutes);
 
 // API quản lý thực đơn
 app.use('/api/menus', menuRoutes);
+
+// API quản lý đăng ký
+app.use('/api/registrations', registrationRoutes);
 
 // Xử lý đường dẫn không tồn tại
 app.use(notFound);
